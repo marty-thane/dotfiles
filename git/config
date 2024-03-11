@@ -1,0 +1,5 @@
+[user]
+	email = mzf@tuta.io
+	name = Marty Thane
+[push]
+	autoSetupRemote = true

@@ -1,0 +1,13 @@
+import = ["~/.config/alacritty/theme.toml"]
+
+[window]
+opacity = 0.75
+
+[window.padding]
+x = 6
+
+[font]
+size = 10.6
+
+[colors.primary]
+background = "#000000"

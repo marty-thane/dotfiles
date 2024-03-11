@@ -1,0 +1,87 @@
+font pango:monospace 9
+gaps inner 9
+for_window [class="^.*"] border pixel 2
+
+set $refresh_i3status killall -SIGUSR1 i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+set $mod Mod1
+floating_modifier $mod
+
+bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Shift+Return exec librewolf
+bindsym $mod+n exec i3-sensible-terminal -e ranger
+bindsym Print exec maim -s ~/Pictures/$(date +%s).png
+bindsym $mod+p exec dmenu_path | dmenu | xargs i3-msg exec --
+
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+bindsym $mod+Shift+h move left 51
+bindsym $mod+Shift+j move down 51
+bindsym $mod+Shift+k move up 51
+bindsym $mod+Shift+l move right 51
+
+bindsym $mod+w fullscreen toggle
+bindsym $mod+q kill
+
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+
+bindsym $mod+Shift+r restart
+bindsym $mod+Shift+e exec --no-startup-id i3-msg exit
+
+bindsym $mod+Control+h resize shrink width 51
+bindsym $mod+Control+j resize grow height 51
+bindsym $mod+Control+k resize shrink height 51
+bindsym $mod+Control+l resize grow width 51
+
+set $transparent #000000bf
+set $black #282828
+set $grey #928374
+set $red #cc241d
+set $blue #458588
+set $white #ebdbb2
+
+client.focused   $blue  $blue  $white $blue  $blue
+client.unfocused $black $black $white $black $black
+client.urgent    $red   $red   $white $red   $red
+
+bar {
+	position top
+	height 21
+	status_command i3status
+	i3bar_command i3bar --transparency
+	colors {
+		background $transparent
+		statusline $white
+		separator  $grey
+
+		focused_workspace  $blue        $blue        $white
+		inactive_workspace $transparent $transparent $white
+		urgent_workspace   $red         $red         $white
+	}
+}
+
+for_window [class="KeePassXC"] floating enable
+for_window [class="Lxappearance"] floating enable
+for_window [class="Pavucontrol"] floating enable
+for_window [class="SimpleScreenRecorder"] floating enable
+
+exec_always --no-startup-id picom --backend glx --vsync
+exec_always --no-startup-id autotiling -l 2
