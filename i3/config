@@ -51,7 +51,7 @@ bindsym $mod+Control+j resize grow height 51
 bindsym $mod+Control+k resize shrink height 51
 bindsym $mod+Control+l resize grow width 51
 
-set $transparent #000000bf
+set $transparent #000000cc
 set $black #282828
 set $grey #928374
 set $red #cc241d

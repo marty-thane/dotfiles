@@ -1,7 +1,7 @@
 import = ["~/.config/alacritty/theme.toml"]
 
 [window]
-opacity = 0.75
+opacity = 0.8
 
 [window.padding]
 x = 6
