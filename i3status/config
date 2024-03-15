@@ -23,6 +23,7 @@ battery 0 {
 	status_bat = "BAT"
 	status_unk = "UNK"
 	status_full = "FULL"
+	low_threshold = 15
 }
 
 volume master {
