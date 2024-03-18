@@ -4,7 +4,7 @@ alias ls="ls -h --color=auto --group-directories-first"
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
 alias ip="ip -color=auto"
-
+alias du="du -h"
 alias cp="cp -iv"
 alias mv="mv -iv"
 alias rm="rm -iv"
