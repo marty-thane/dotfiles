@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 alias ls="ls -h --color=auto --group-directories-first"
 alias grep="grep --color=auto"
@@ -10,14 +10,9 @@ alias mv="mv -iv"
 alias rm="rm -iv"
 alias bc="bc -ql"
 alias mkdir="mkdir -pv"
-# alias wget="wget --no-hsts"
+alias wget="wget --no-hsts"
 
-alias sudo="doas"
-alias vim="nvim"
-alias sxiv="nsxiv"
-alias locate="plocate"
-
-#PS1='\[\033[00m\][\[\033[1;32m\]\u@\h \[\033[1;34m\]\W\[\033[00m\]]\$ '
+PS1='\w $ '
 
 for cmd in mount umount fdisk updatedb poweroff reboot; do
 	alias $cmd="doas $cmd"
