@@ -1,5 +1,6 @@
-xwallpaper --zoom Pictures/wall.jpg &
+xwallpaper --zoom Pictures/wal.jpg &
 redshift -PO 3000 &
+devmon &
 setxkbmap us -option caps:swapescape &
 xset r rate 250 30 &
 xset b off &
