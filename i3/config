@@ -78,6 +78,7 @@ bar {
 	}
 }
 
+for_window [class="Arandr"] floating enable
 for_window [class="KeePassXC"] floating enable
 for_window [class="Lxappearance"] floating enable
 for_window [class="Pavucontrol"] floating enable
