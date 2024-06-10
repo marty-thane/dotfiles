@@ -83,6 +83,7 @@ for_window [class="KeePassXC"] floating enable
 for_window [class="Lxappearance"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="SimpleScreenRecorder"] floating enable
+for_window [class="matplotlib"] floating enable
 
 exec_always --no-startup-id picom --backend glx --vsync
 exec_always --no-startup-id autotiling -l 2
