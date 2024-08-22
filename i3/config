@@ -52,7 +52,6 @@ bindsym $mod+Control+j resize grow height 51
 bindsym $mod+Control+k resize shrink height 51
 bindsym $mod+Control+l resize grow width 51
 
-set $transparent #000000cc
 set $black #282828
 set $grey #928374
 set $red #cc241d
@@ -67,15 +66,15 @@ bar {
 	position top
 	height 21
 	status_command i3status
-	i3bar_command i3bar --transparency
+	i3bar_command i3bar
 	colors {
-		background $transparent
+		background $black
 		statusline $white
 		separator  $grey
 
-		focused_workspace  $blue        $blue        $white
-		inactive_workspace $transparent $transparent $white
-		urgent_workspace   $red         $red         $white
+		focused_workspace  $blue  $blue  $white
+		inactive_workspace $black $black $white
+		urgent_workspace   $red   $red   $white
 	}
 }
 
