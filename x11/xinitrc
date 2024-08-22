@@ -1,6 +1,7 @@
 xwallpaper --zoom Pictures/wal.jpg &
 redshift -PO 3500 &
 devmon &
+pulseaudio &
 setup_keyboard us &
 xset b off &
 exec i3
