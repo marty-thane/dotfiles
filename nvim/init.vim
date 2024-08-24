@@ -2,7 +2,7 @@ set nocompatible
 filetype plugin on
 syntax enable
 colorscheme gruvbox
-hi CursorLine cterm=NONE ctermbg=235 ctermfg=NONE
+hi CursorLine cterm=NONE ctermbg=8 ctermfg=NONE
 let mapleader =","
 
 " set number
