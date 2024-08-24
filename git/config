@@ -3,5 +3,3 @@
 	name = Marty Thane
 [push]
 	autoSetupRemote = true
-[http]
-	postBuffer = 157286400
