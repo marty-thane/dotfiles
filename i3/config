@@ -54,8 +54,8 @@ bindsym $mod+Control+l resize grow width 51
 
 set $black #282828
 set $grey #928374
-set $red #cc241d
-set $blue #458588
+set $red #fb4934
+set $blue #83a598
 set $white #ebdbb2
 
 client.focused   $blue  $blue  $white $blue  $blue
@@ -72,7 +72,7 @@ bar {
 		statusline $white
 		separator  $grey
 
-		focused_workspace  $blue  $blue  $white
+		focused_workspace  $blue  $blue  $black
 		inactive_workspace $black $black $white
 		urgent_workspace   $red   $red   $white
 	}
