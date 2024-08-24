@@ -1,6 +1,6 @@
-import = ["~/.config/alacritty/gruvbox.toml"]
+import = ["~/.config/alacritty/gruvbox-dark.toml"]
 
-[window]
+# [window]
 # opacity = 0.9
 
 [window.padding]
