@@ -17,6 +17,7 @@ bindsym $mod+n exec --no-startup-id i3-sensible-terminal -e ranger
 bindsym $mod+b exec --no-startup-id i3-sensible-terminal -e newsboat
 bindsym Print exec --no-startup-id maim -s ~/Pictures/$(date +%s).png
 bindsym $mod+p exec --no-startup-id dmenu_path | dmenu | xargs i3-msg exec -- --no-startup-id
+bindsym $mod+Shift+p exec --no-startup-id passmenu --type -sb "$yellow"
 
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -54,7 +55,8 @@ bindsym $mod+Control+l resize grow width 51
 
 set $black #282828
 set $grey #928374
-set $red #fb4934
+set $red #cc241d
+set $yellow #d79921
 set $blue #83a598
 set $white #ebdbb2
 
@@ -81,7 +83,7 @@ bar {
 for_window [class="Arandr"] floating enable
 for_window [class="KeePassXC"] floating enable
 for_window [class="Lxappearance"] floating enable
-for_window [class="Pavucontrol"] floating enable
+for_window [class="pavucontrol"] floating enable
 for_window [class="SimpleScreenRecorder"] floating enable
 for_window [class="matplotlib"] floating enable
 
