@@ -28,17 +28,8 @@ rotate() {
 	done
 }
 
-delete_files() {
-	tr '\n' '\0' | xargs -0 realpath | sort | uniq | while read file; do
-		if [ -e "$file" ]; then
-			rm "$file" && echo "Deleted: $file" || echo "Failed to delete: $file"
-		else
-			echo "File not found: $file"
-		fi
-	done
-}
-
 case "$1" in
+"C-d")      while read file; do mv -vf $file /tmp; done ;;
 "C-x")      xclip -in -filter | tr '\n' ' ' | xclip -in -selection clipboard ;;
 "C-c")      while read file; do xclip -selection clipboard -target image/png "$file"; done ;;
 "C-e")      while read file; do urxvt -bg "#444" -fg "#eee" -sl 0 -title "$file" -e sh -c "exiv2 pr -q -pa '$file' | less" & done ;;
@@ -47,5 +38,5 @@ case "$1" in
 "C-comma")  rotate 270 ;;
 "C-period") rotate  90 ;;
 "C-slash")  rotate 180 ;;
-"C-d")      delete_files ;;
 esac
+
