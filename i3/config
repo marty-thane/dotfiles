@@ -50,9 +50,9 @@ set $dark #282828
 set $alert #bf4040
 set $light #928374
 
-client.focused   $light $light $light $light $light
-client.unfocused $dark  $dark  $light $dark  $dark
-client.urgent    $alert $alert $light $alert $alert
+client.focused   $light $light $light
+client.unfocused $dark  $dark  $dark
+client.urgent    $alert $alert $alert
 
 for_window [class="Tk"] floating enable
 for_window [class="matplotlib"] floating enable
