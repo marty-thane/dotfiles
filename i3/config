@@ -55,12 +55,9 @@ client.focused   $blue  $blue  $white $blue  $blue
 client.unfocused $black $black $white $black $black
 client.urgent    $red   $red   $white $red   $red
 
-for_window [class="Arandr"] floating enable
-for_window [class="Ulauncher"] floating enable, border pixel 0
 for_window [class="Tk"] floating enable
-for_window [class="pavucontrol"] floating enable
-for_window [class="SimpleScreenRecorder"] floating enable
 for_window [class="matplotlib"] floating enable
+for_window [class="SimpleScreenRecorder"] floating enable
 
 exec_always --no-startup-id picom --backend glx --vsync
 exec_always --no-startup-id autotiling -l 2
