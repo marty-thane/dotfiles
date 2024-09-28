@@ -1,0 +1,15 @@
+@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
+configuration {
+	font: "monospace 11";
+	disable-history: true;
+	cycle: false;
+	matching: "fuzzy";
+	scroll-method: 1;
+}
+listview {
+	scrollbar: false;
+	lines: 5;
+}
+window {
+	width: 300px;
+}
