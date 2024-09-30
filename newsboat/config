@@ -23,5 +23,5 @@ bind-key x pb-delete
 macro m set browser "mpv %u" ; open-in-browser ;
 macro n set browser "mpv --no-video %u" ; open-in-browser ;
 macro x set browser "yt-dlp -x %u" ; open-in-browser ;
-macro y set browser "yt-dlp -f 135 %u" ; open-in-browser ;
-macro Y set browser "yt-dlp -f 136 %u" ; open-in-browser ;
+macro y set browser "yt-dlp -f 135+234 %u" ; open-in-browser ;
+macro Y set browser "yt-dlp -f 136+234 %u" ; open-in-browser ;
