@@ -1,7 +1,0 @@
-xwallpaper --zoom Pictures/wal.jpg &
-redshift -PO 3000 &
-devmon &
-pulseaudio &
-setup_keyboard us &
-xset b off &
-exec i3
