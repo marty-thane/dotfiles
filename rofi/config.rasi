@@ -1,6 +1,6 @@
 @theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
 configuration {
-	font: "monospace 11";
+	font: "monospace 10.5";
 	disable-history: true;
 	cycle: false;
 	matching: "fuzzy";
