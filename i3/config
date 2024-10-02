@@ -56,6 +56,7 @@ client.urgent    $alert $alert $alert
 
 for_window [class="Tk"] floating enable
 for_window [class="matplotlib"] floating enable
+for_window [class="pavucontrol"] floating enable
 for_window [class="SimpleScreenRecorder"] floating enable
 
 exec_always --no-startup-id picom --backend glx --vsync
