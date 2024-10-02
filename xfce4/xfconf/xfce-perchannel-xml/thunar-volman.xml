@@ -3,7 +3,7 @@
 <channel name="thunar-volman" version="1.0">
   <property name="autokeyboard" type="empty">
     <property name="enabled" type="bool" value="true"/>
-    <property name="command" type="string" value="setup_keyboard"/>
+    <property name="command" type="string" value="setxkbmap -option caps:swapescape"/>
   </property>
   <property name="autotablet" type="empty">
     <property name="enabled" type="bool" value="true"/>
