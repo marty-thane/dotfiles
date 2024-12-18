@@ -1,2 +1,2 @@
-set selection-clipboard clipboard
+set selection-clipboard primary
 set adjust-open width
