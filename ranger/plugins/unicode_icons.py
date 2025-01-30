@@ -13,11 +13,11 @@ from ranger.core.linemode import LinemodeBase
 # https://unicode.org/emoji/charts/full-emoji-list.html
 EXTENSIONS = {}
 for extensions, icon in [
-    ('py pyc', '🐍 '),
-    ('yml ini', '⚙ '),
+    ('py pyc', '🐍'),
+    ('yml ini', '⚙'),
     ('flac', '🎵'),
-    ('mkv', '🎞️ '),
-    ('webp', '🖼️ '),
+    ('mkv', '🎞️'),
+    ('webp', '🖼️'),
 ]:
     EXTENSIONS.update(dict(zip(extensions.split(), repeat(icon))))
 
