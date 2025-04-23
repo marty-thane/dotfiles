@@ -45,6 +45,7 @@ bindsym $mod+b exec --no-startup-id i3-sensible-terminal -e newsboat
 bindsym Print exec --no-startup-id maim -u -s ~/Pictures/$(date +%s).png
 bindsym $mod+p exec --no-startup-id rofi -show run
 bindsym $mod+Shift+p exec --no-startup-id rofi-pass
+bindsym $mod+e exec --no-startup-id chkb
 
 set $dark #282828
 set $alert #bf4040

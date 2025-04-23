@@ -9,7 +9,8 @@ let mapleader =","
 set cursorline
 set laststatus=0 ruler
 set autoindent
-set tabstop=4
+set tabstop=2
+set expandtab
 set shiftwidth=0
 " set nohlsearch
 set autowrite

@@ -18,6 +18,8 @@ for cmd in mount umount fdisk updatedb poweroff reboot; do
 	alias $cmd="doas $cmd"
 done; unset cmd
 
+alias pys="source .venv/bin/activate"
+
 ranger() {
 	if [ -z "$RANGER_LEVEL" ]; then
 		/usr/bin/ranger "$@"
