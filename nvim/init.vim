@@ -43,5 +43,7 @@ vmap s` c`<Esc>p
 vmap s' c''<Left><Esc>p
 vmap s< c<><Left><Esc>p
 vmap s> s<
-" one this this surround thing will be implemented as a function, allowing the
-"/ user to surround text with anything he desires
+
+call plug#begin()
+Plug 'github/copilot.vim'
+call plug#end()
