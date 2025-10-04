@@ -11,6 +11,13 @@ alias rm="rm -iv"
 alias bc="bc -ql"
 alias mkdir="mkdir -pv"
 alias wget="wget --no-hsts"
+alias gc='git commit'
+alias gp='git push'
+alias gst='git status'
+alias ga='git add'
+alias gco='git checkout'
+alias gb='git branch'
+alias gl='git log --oneline --graph --decorate'
 
 PS1='\w $ '
 
